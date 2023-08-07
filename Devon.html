@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+ <html id="first-full" lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Devon+sark</title>
+     <link rel="icon" href="https://www.wix.com/favicon.ico" sizes="192*192">
+     <link href="Devon+sark.css" rel="stylesheet">
+ </head>
+ <body>
+     <header>
+         <div class="hover-full-header-1">
+             <p class="Devon-sark">Devon + Sark</p>
+             <a href="projects.html" id="project">PROJECTS</a>
+             <p id="press">PRESS</p>
+             <p id="about">ABOUT</p>
+             <a id="contact">CONTACT</a>
+         </div>
+     </header>
+     <div class="main-body">
+         <div class="image-container">
+             <img class="small-img" src="smallimg.jpg" alt="Image Description">
+             <div class="image-text">
+              Devon+Sark<br>
+              &nbsp;Architects
+             </div>
+           </div>
+              <img class="big-img" src="bigimg1.jpg"> 
+              <p class="bottom-text">Daphne Sark and Aden Devon, Founded in 2023</p>
+              <section id="future-text">The Future Is Here
+              </section>
+              <section id="future-img"> 
+              <img src="future.webp">
+            </section>
+         </div>
+     <footer>
+         <div id="contactfoot">
+             <p class="contact-p">Contact</p>
+             Ph : 884870346<br>
+             Email : syamnadhu3@gmail.com
+         </div>
+         <div class="address">
+             <p class="address-p">Address</p>
+             Kolam,Panmana
+             <br>Kollam,India
+         </div>
+         <div class="social">
+             <p class="social-p">Social</p>
+             <a href="https://www.instagram.com/xtreamer3/">Instagram</a><br>
+             <a href="https://www.facebook.com/syam.syampanmana">Facebook</a>
+         </div>
+     </footer>
+     <script>
+        document.getElementById('contact').addEventListener('click', function() {
+            var contactFoot = document.getElementById('contactfoot');
+            contactFoot.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        document.getElementById('about').addEventListener('click', function() {
+            var contactFoot = document.getElementById('contactfoot');
+            contactFoot.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        function createFirework() {
+            const colors = ['#696969',  '#696969',  '#696969', '#696969',  '#696969', '#696969'];
+
+            for (let i = 0; i < 30; i++) {
+                const firework = document.createElement('div');
+                firework.className = 'firework';
+                firework.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                firework.style.left = Math.random() * window.innerWidth + 'px';
+                firework.style.top = Math.random() * window.innerHeight + 'px';
+                document.body.appendChild(firework);
+
+                setTimeout(() => {
+                    firework.remove();
+                }, 2000);
+            }
+        }
+
+        document.getElementById('press').addEventListener('click', function() {
+            createFirework();
+        });
+    </script>
+    </body>
+ </html>

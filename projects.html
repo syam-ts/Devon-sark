@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html id="second-full" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="icon" href="https://www.wix.com/favicon.ico" sizes="192*192">
+ <link href="Devon+sark.css" rel="stylesheet">
+</head>
+<body id="project-body">
+    <header>
+        <div class="hover-full-header-1">
+            <p class="Devon-sark">Devon + Sark</p>
+            <a href="Devon.html"  id="home">HOME</a>
+            <p id="press">PRESS</p>
+            <p id="about">ABOUT</p>
+            <a id="contact">CONTACT</a>
+    </div>
+    </header>
+    <div class="conainer">
+        <div class="main-projects">
+            <section id="section-1">Projects<p id="project-line"></p>
+            </section>
+    <section class="zcomunity">
+   <div class="zcommunity-text">Z COMMUNITY CENTER
+    </div>
+   <div class="zcommunity-img">
+    <img src="zcommunitycenter.jpg.webp">
+   </div>
+   </section>
+   <section id="section-2">
+</section>
+<section class="southlibrary">
+<div class="southlibrary-text">SOUTH LIBRARY
+</div>
+<div class="southlibrary-img">
+<img src="south-library.jpg.webp">
+</div>
+</section>
+<section id="section-3">
+</section>
+<section class="ay-house">
+<div class="ay-house-text">A Y HOUSE
+</div>
+<div class="ay-house-img">
+<img src="ayhouse.jpg.jpg">
+</div>
+</section>
+<section id="section-4">
+</section>
+<section class="perk-park">
+<div class="perk-park-text">PERK PARK
+</div>
+<div class="perk-park-img">
+<img src="perk-park.jpg.jpg">
+</div>
+</section>
+<section id="section-5">
+</section>
+<section class="dw-house">
+<div class="ay-house-text">D W HOUSE
+</div>
+<div class="dw-house-img">
+<img src="dwhouse.jpg.jpg">
+</div>
+</section>
+<section id="section-6">
+    </section>
+<div class="about-section">
+               <div id="about-text">
+<p id="the-studio">The Studio</p>
+We design everything from hotels to buildings <br>and homes to commercial spaces.
+ Our team <br>focuses on the process to ensure that the final<br> results are nothing less than perfect spaces for <br>our clients.
+  We value the people that we work <br>with huge Respect, honesty, 
+compassion and<br> professionalism guide us in our day-to-day work
+               </div>
+               <div id="about-img">
+                <img src="about-1,jpg.jpg">
+               </div>
+         </div>
+                </div>
+            </div> 
+            <section id="above-footer">
+            </section>
+    <footer>
+        <div id="contactfoot">
+            <p class="contact-p">Contact</p>
+            Ph : 884870346<br>
+            Email : syamnadhu3@gmail.com
+        </div>
+        <div id="copyright">
+            © 2023 by Devon+Sark Syam Designes. Powered and secured by Wix
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contact').addEventListener('click', function() {
+            var contactFoot = document.getElementById('contactfoot');
+            contactFoot.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        document.getElementById('about').addEventListener('click', function() {
+            var contactFoot = document.getElementById('contactfoot');
+            contactFoot.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        function createFirework() {
+            const colors = [ '#696969',  '#696969',  '#696969', '#D3D3D3',  '#D3D3D3', '#D3D3D3'];
+            for (let i = 0; i < 30; i++) {
+                const firework = document.createElement('div');
+                firework.className = 'firework';
+                firework.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                firework.style.left = Math.random() * window.innerWidth + 'px';
+                firework.style.top = Math.random() * window.innerHeight + 'px';
+                document.body.appendChild(firework);
+
+                setTimeout(() => {
+                    firework.remove();
+                }, 2000);
+            }}
+        document.getElementById('press').addEventListener('click', function() {
+            createFirework();
+        });
+    </script>
+</body>
+</html>
